@@ -1,0 +1,19 @@
+# ---------------------------------------------------------------------------
+# Environment for machine_learning001.ipynb  (Module 1 - Scikit-Learn)
+# Generated Python version: 3.13.9
+# The pinned versions below are exactly what the notebook reported when it was
+# last executed (see the "Importing libraries" cell).
+# ---------------------------------------------------------------------------
+
+# Core data-science stack
+ipython==9.7.0
+scikit-learn==1.7.2
+pandas==2.3.3
+numpy==2.3.5
+matplotlib==3.10.6
+# scipy is imported directly for scipy.stats.sem() in the cross-validation section
+scipy
+
+# Notebook runtime
+jupyterlab
+ipykernel

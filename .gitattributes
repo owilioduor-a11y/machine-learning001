@@ -1,0 +1,39 @@
+# ---------------------------------------------------------------------------
+# Line-ending and diff normalisation
+# Keeps the repository consistent no matter which OS it is cloned on.
+# ---------------------------------------------------------------------------
+
+# Normalise all text files to LF *inside the repository*
+* text=auto eol=lf
+
+# ...except Windows-native scripts, which must stay CRLF
+*.bat  text eol=crlf
+*.cmd  text eol=crlf
+*.ps1  text eol=crlf
+
+# ---------------------------------------------------------------------------
+# Notebooks
+# ---------------------------------------------------------------------------
+# Jupyter notebooks are JSON: keep LF and mark them as documentation so they
+# are excluded from GitHub's language statistics.
+*.ipynb  text eol=lf
+*.ipynb  linguist-documentation=false
+*.ipynb  linguist-detectable=false
+
+# ---------------------------------------------------------------------------
+# Binary / non-diffable artefacts
+# ---------------------------------------------------------------------------
+*.png     binary
+*.jpg     binary
+*.jpeg    binary
+*.gif     binary
+*.pdf     binary
+*.pkl     binary
+*.joblib  binary
+*.npy     binary
+*.npz     binary
+*.pt      binary
+*.pth     binary
+*.h5      binary
+*.parquet binary
+*.xlsx    binary

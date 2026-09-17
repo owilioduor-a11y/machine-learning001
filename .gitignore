@@ -1,0 +1,188 @@
+# ==============================================================================
+# .gitignore  —  Machine Learning / Data Analysis (Python + Jupyter)
+# ==============================================================================
+# Tip: patterns are matched relative to this file. Add "!" to un-ignore
+# something you actually DO want to commit (e.g. "!data/sample.csv").
+# ==============================================================================
+
+# ------------------------------------------------------------------ Python ----
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+pip-wheel-metadata/
+
+# ------------------------------------------------- Virtual environments -------
+venv/
+.venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+.python-version
+.pdm-python
+
+# --------------------------------------------------- Packaging / tooling ------
+.pdm-build/
+.conda/
+*.egg
+poetry.lock.bak
+
+# ------------------------------------------------------ Jupyter / IPython -----
+.ipynb_checkpoints/
+profile_default/
+ipython_config.py
+.jupyter/
+jupyter_config/
+*.nbconvert.ipynb
+.nbconvert/
+__pycache__/*.ipynb
+
+# --------------------------------------------------------------- Datasets -----
+# Raw / intermediate data is usually copyrighted or too large for a public repo.
+# Keep them out of Git and document how to obtain them in the README instead.
+data/
+raw/
+raw_data/
+processed/
+interim/
+external/
+dataset/
+datasets/
+*.csv
+*.tsv
+*.xlsx
+*.xls
+*.parquet
+*.feather
+*.json.gz
+*.h5
+*.hdf5
+*.sqlite
+*.sqlite3
+*.db
+
+# --------------------------------------------------- Model artefacts ----------
+models/
+checkpoints/
+*.pkl
+*.pickle
+*.joblib
+*.npy
+*.npz
+*.pt
+*.pth
+*.ckpt
+*.onnx
+*.tflite
+*.safetensors
+*.bin
+*.model
+*.weights
+
+# ------------------------------------------------- Experiment tracking --------
+mlruns/
+mlflow.db
+wandb/
+lightning_logs/
+outputs/
+runs/
+.neptune/
+*_tb/
+events.out.tfevents.*
+.optuna/
+
+# --------------------------------------------------------------- Plotting -----
+.plotly/
+# Ad-hoc plot output is ignored by default, BUT images you deliberately keep for
+# the README / docs are un-ignored below (negation must come after the ignore).
+*.png
+*.jpg
+*.jpeg
+*.svg
+*.gif
+!docs/**/*.png
+!docs/**/*.jpg
+!docs/**/*.jpeg
+!docs/**/*.svg
+!docs/**/*.gif
+!reports/**/*.png
+!reports/**/*.jpg
+!reports/**/*.jpeg
+!reports/**/*.svg
+!reports/**/*.gif
+
+# ----------------------------------------------------------------- Secrets ----
+.env
+.env.*
+*.env
+!.env.example
+secrets.json
+credentials.json
+kaggle.json
+service_account.json
+config.local.*
+
+# ----------------------------------------------------------------- Testing ----
+.pytest_cache/
+.coverage
+.coverage.*
+coverage.xml
+htmlcov/
+.tox/
+.nox/
+.hypothesis/
+.cache/
+nosetests.xml
+*.cover
+
+# ------------------------------------------------------ Linters / type-check --
+.mypy_cache/
+.dmypy.json
+dmypy.json
+.ruff_cache/
+.pytype/
+.pylint.d/
+.bandit/
+.sqlfluff
+
+# ------------------------------------------------------ VS Code / editors ----
+.vscode/
+!.vscode/settings.json.example
+!.vscode/launch.json.example
+.idea/
+*.swp
+*.swo
+*~
+\#*\#
+.\#*
+.sublime-*
+
+# ------------------------------------------------------- OS / misc -----------
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Thumbs.db
+ehthumbs.db
+desktop.ini
+$RECYCLE.BIN/
