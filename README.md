@@ -12,14 +12,14 @@ cross-validating a trained model.
 ![Jupyter](https://img.shields.io/badge/Jupyter-Notebook-F37626?logo=jupyter&logoColor=white)
 ![License](https://img.shields.io/badge/license-MIT-green)
 
-## 📖 Overview
+## Overview
 
 Module 1 is a complete, beginner-friendly introduction to **supervised
 classification** with scikit-learn. Using the classic **Iris** dataset, it
 builds up a linear classifier (`SGDClassifier`) step by step and measures its
 performance honestly with both a held-out test set and 5-fold cross-validation.
 
-## 📓 The Notebook
+## The Notebook
 
 | Item | Detail |
 | --- | --- |
@@ -29,7 +29,7 @@ performance honestly with both a held-out test set and 5-fold cross-validation.
 | Model | `SGDClassifier` (linear), wrapped in a `Pipeline` with `StandardScaler` |
 | Test split | 25% hold-out (`random_state=33`) → 112 train / 38 test |
 
-## 🔍 What the notebook covers
+##  What the notebook covers
 
 1. **Setup** — import `IPython`, `scikit-learn`, `pandas`, `numpy` and `matplotlib`, and print their versions.
 2. **Load data** — `datasets.load_iris()` into `x_iris` (150 × 4) and `y_iris` (150,).
@@ -41,7 +41,7 @@ performance honestly with both a held-out test set and 5-fold cross-validation.
 8. **Evaluate** — accuracy on train and test, plus `classification_report` and `confusion_matrix`.
 9. **Cross-validate** — 5-fold `KFold` (shuffled, `random_state=33`) over a `Pipeline`, then report mean ± standard error.
 
-## 📊 Results
+##  Results
 
 **Accuracy**
 
@@ -77,7 +77,7 @@ fold scores : [0.667, 0.800, 0.767, 0.867, 0.867]
 mean ± SEM  : 0.793 (±0.037)
 ```
 
-## 📂 Project Structure
+##  Project Structure
 
 ```
 machine learning001/
@@ -89,7 +89,7 @@ machine learning001/
 └── README.md
 ```
 
-## 🚀 Getting Started
+##  Getting Started
 
 ### Prerequisites
 
@@ -99,8 +99,8 @@ machine learning001/
 ### Installation
 
 ```bash
-git clone https://github.com/owilioduor-a11y/<YOUR-REPO>.git
-cd <YOUR-REPO>
+git clone https://github.com/owilioduor-a11y/machine-learning001.git
+cd machine-learning001
 
 python -m venv .venv
 # Windows (PowerShell)
@@ -115,7 +115,7 @@ jupyter lab
 Then open `machine_learning001.ipynb` and **Run All** cells. No data download is
 required — the Iris dataset ships with scikit-learn.
 
-## 🧠 Key concepts covered
+##  Key concepts covered
 
 - Train/test splitting and using `random_state` for reproducibility
 - Feature standardisation, and why the scaler is fitted on the training set only
@@ -124,7 +124,7 @@ required — the Iris dataset ships with scikit-learn.
 - Why cross-validation gives a more reliable estimate than a single split
 - Reproducible pipelines with `sklearn.pipeline.Pipeline`
 
-## 🗺️ Roadmap
+##  Roadmap
 
 - [x] **Module 1** — Linear classification with scikit-learn (Iris dataset)
 - [ ] **Module 2** — coming soon
@@ -132,15 +132,15 @@ required — the Iris dataset ships with scikit-learn.
 - [ ] Tree-based ensembles
 - [ ] Unsupervised learning
 
-## 📄 License
+##  License
 
 Released under the **MIT License** — see [`LICENSE`](LICENSE) for details.
 
-## 👤 Author
+##  Author
 
 **Peter Owili**
 
-## 🙏 Acknowledgements
+##  Acknowledgements
 
 - The **Iris** dataset (R. A. Fisher), bundled with scikit-learn.
 - The scikit-learn, NumPy, pandas and Matplotlib documentation and communities.
