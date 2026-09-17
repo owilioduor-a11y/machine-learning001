@@ -99,7 +99,7 @@ machine learning001/
 ### Installation
 
 ```bash
-git clone https://github.com/<YOUR-USERNAME>/<YOUR-REPO>.git
+git clone https://github.com/owilioduor-a11y/<YOUR-REPO>.git
 cd <YOUR-REPO>
 
 python -m venv .venv
